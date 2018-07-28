@@ -6,6 +6,14 @@ function nestedTarget(){
   return document.getElementById("nested").querySelectorAll(".target")[0];
 }
 
+function increaseRankBy(n){
+  const lis=document.getElementsByClass("ranked-list");
+  
+  for(let i=0; i<lis.length; i++){
+    lis[i].innerHTML=(parseInt(lis[i].innerHTML)+1);
+  }
+}
+
 function deepestChild(){
   const lis= document.getElementById("grand-node");
   
